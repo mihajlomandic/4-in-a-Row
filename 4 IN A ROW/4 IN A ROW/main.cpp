@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
+#include <cstdlib>
 
 using namespace std;
 
@@ -45,21 +46,29 @@ void PutInTable()
 
 void Game()
 {
+    OutputTable();
+
     while(true)
     {
         currentPlayer = '1';
-        OutputTable();
         cout << "Player 1: ";
         cin >> columnChoice;
         columnChoice = columnChoice - 1;
         PutInTable();
+        system("cls");
+        OutputTable();
+        if(false /*FUNCTION TO CHECK IF PLAYER WON*/)
+            break;
 
         currentPlayer = '2';
-        OutputTable();
         cout << "Player 2: ";
         cin >> columnChoice;
         columnChoice = columnChoice - 1;
         PutInTable();
+        system("cls");
+        OutputTable();
+        if(false /*FUNCTION TO CHECK IF PLAYER WON*/)
+            break;
     }
 }
 
