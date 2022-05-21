@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1653153328 source:c:\users\pc\desktop\4 in a row\4 in a row\main.cpp
+	<iostream>
+	<vector>
+	<iomanip>
+
